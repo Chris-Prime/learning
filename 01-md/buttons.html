@@ -8,48 +8,134 @@
 </head>
 <body>
     <main>
-        <div class="column">
-            <div class="wrapper top light-bg">
-                <button class="btn btn-add btn-flat"><img src="plus-sign.svg" alt=""></button>
-                <button class="btn btn-add btn-raised"><img src="plus-sign.svg" alt=""></button>
+        <div>
+            <header>
+                <h3>Buttons</h3>
+            </header>
+            <div class="column">
+                <div class="wrapper top light-bg">
+                    <button class="btn btn-add btn-flat"><img src="plus-sign.svg" alt=""></button>
+                    <button class="btn btn-add btn-raised"><img src="plus-sign.svg" alt=""></button>
+                </div>
+                <div class="wrapper light-bg">
+                    <div class="row indicator">
+                        <p>Flat</p><p>Raised</p>
+                    </div>
+                    <div class="row">
+                        <button class="btn-normal">normal</button><button class="btn-normal-raised">normal</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn-pressed">pressed</button><button class="btn-pressed-raised">pressed</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn-normal" disabled>disabled</button><button class="btn-normal-raised" disabled>disabled</button>
+                    </div>
+                    <div class="row"></div>
+                </div>
             </div>
-            <div class="wrapper light-bg">
-                <div class="row indicator">
-                    <p>Flat</p><p>Raised</p>
+            <div class="column">
+                <div class="wrapper top dark-bg">
+                    <button class="btn-add-dark"><img src="plus-sign.svg" alt=""></button>
+                    <button class="btn-add-dark-raised"><img src="plus-sign.svg" alt=""></button>
                 </div>
-                <div class="row">
-                    <button class="btn-normal">normal</button><button class="btn-normal-raised">normal</button>
+                <div class="wrapper dark-bg">
+                    <div class="row indicator indicator-dark">
+                        <p>Flat</p><p>Raised</p>
+                    </div>
+                    <div class="row">
+                        <button class="btn-normal-dark">normal</button><button class="btn-normal-raised-dark">normal</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn-pressed-dark">pressed</button><button class="btn-pressed-raised-dark">pressed</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn-normal-dark" disabled>disabled</button><button class="btn-normal-raised-dark" disabled>disabled</button>
+                    </div>
+                    <div class="row"></div>
                 </div>
-                <div class="row">
-                    <button class="btn-pressed">pressed</button><button class="btn-pressed-raised">pressed</button>
-                </div>
-                <div class="row">
-                    <button class="btn-normal" disabled>disabled</button><button class="btn-normal-raised" disabled>disabled</button>
-                </div>
-                <div class="row"></div>
             </div>
         </div>
-        <div class="column">
-            <div class="wrapper top dark-bg">
-                <button class="btn-add-dark"><img src="plus-sign.svg" alt=""></button>
-                <button class="btn-add-dark-raised"><img src="plus-sign.svg" alt=""></button>
+        <div style="width: 100%; height: 120px; display: inline-block;"></div>
+        <div>
+            <header>
+                <h3>Switches and sliders</h3>
+            </header>
+            <div class="column">
+                <div class="wrapper top dir-column light-bg">
+                    <div class="row">
+                        <input type="checkbox" checked>
+                        <input type="radio" value=1 name="" id="" checked>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <div class="row">
+                            <input type="checkbox"/>
+                            <input type="radio" name="" id="">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper light-bg">
+                    <div class="row indicator">
+                        <p>Flat</p><p>Raised</p>
+                    </div>
+                    <div class="row">
+                        <button class="btn-normal">normal</button><button class="btn-normal-raised">normal</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn-pressed">pressed</button><button class="btn-pressed-raised">pressed</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn-normal" disabled>disabled</button><button class="btn-normal-raised" disabled>disabled</button>
+                    </div>
+                    <div class="row"></div>
+                </div>
             </div>
-            <div class="wrapper dark-bg">
-                <div class="row indicator indicator-dark">
-                    <p>Flat</p><p>Raised</p>
+            <div class="column">
+                <div class="wrapper top dir-column dark-bg">
+                    <div class="row">
+                        <input type="checkbox" checked>
+                        <input type="radio" value=1 name="" id="" checked>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <div class="row">
+                            <input type="checkbox"/>
+                            <input type="radio" name="" id="">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <button class="btn-normal-dark">normal</button><button class="btn-normal-raised-dark">normal</button>
+                <div class="wrapper dark-bg">
+                    <div class="row indicator indicator-dark">
+                        <p>Flat</p><p>Raised</p>
+                    </div>
+                    <div class="row">
+                        <button class="btn-normal-dark">normal</button><button class="btn-normal-raised-dark">normal</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn-pressed-dark">pressed</button><button class="btn-pressed-raised-dark">pressed</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn-normal-dark" disabled>disabled</button><button class="btn-normal-raised-dark" disabled>disabled</button>
+                    </div>
+                    <div class="row"></div>
                 </div>
-                <div class="row">
-                    <button class="btn-pressed-dark">pressed</button><button class="btn-pressed-raised-dark">pressed</button>
-                </div>
-                <div class="row">
-                    <button class="btn-normal-dark" disabled>disabled</button><button class="btn-normal-raised-dark" disabled>disabled</button>
-                </div>
-                <div class="row"></div>
             </div>
         </div>
+        
     </main>
 </body>
 </html>

@@ -6,11 +6,22 @@
   font-family: "Roboto", sans-serif;
 }
 
+h3 {
+  text-align: center;
+  margin: 40px;
+  display: none;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 50px;
+  padding-bottom: 50px;
   background: #00d2ff;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #00d2ff, #928dab);
@@ -36,7 +47,11 @@ body {
   align-items: center;
 }
 
-.light-bg {
+.dir-column {
+  flex-direction: column;
+}
+
+.light-bg, input[type=radio] {
   background-color: #eeeeee;
 }
 
@@ -53,6 +68,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   min-height: 20px;
+  width: 100%;
 }
 
 .indicator {
@@ -172,6 +188,25 @@ button {
   background-color: #303030;
   color: rgba(255, 255, 255, 0.3);
   box-shadow: none;
+}
+
+/** Switches and sliders **/
+.lbg, input[type=checkbox] {
+  background-color: #009688;
+}
+
+.dbg {
+  background-color: #80CBC4;
+}
+
+input[type=checkbox] {
+  width: 24px;
+  height: 24px;
+}
+
+input[type=radio] {
+  width: 24px;
+  height: 24px;
 }
 
 /*# sourceMappingURL=buttons.css.map */
