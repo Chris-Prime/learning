@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+$primary-light-color: #009688;
+$primary-dark-color: #80CBC4;
+$pressed-bg-color: #39A298;
+$disabled-color: #C5C5C5;
+$disabled-text-color: #949494;
+$disabled-btn-text-color: #7A7A7A;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    background: #00d2ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00d2ff, #928dab); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00d2ff, #928dab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.wrapper {
+    width: 456px;
+    height: 485px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.top {
+    height: 167px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.light-bg {
+    background-color: #eeeeee;
+}
+.dark-bg {
+    background-color: #303030;
+}
+.column {
+    display: inline;
+    float: left;
+}
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 20px;
+}
+.indicator {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+    
+    text-align: center;
+    color: rgba(0, 0, 0, 0.537591);
+}
+.indicator-dark {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+button:hover {
+    cursor: pointer;
+}
+button {
+    border: none;
+    outline: none;
+    background: none;
+}
+.btn-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: $primary-light-color;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 8px 8px rgba(0, 0, 0, 0.24);
+}
+.btn-raised {
+    @extend .btn-add;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.12), 0px 14px 14px rgba(0, 0, 0, 0.237602);
+}
+.btn-add-dark {
+    @extend .btn-add;
+    background-color: $primary-dark-color;
+}
+.btn-add-dark-raised {
+    @extend .btn-add-dark, .btn-raised;
+}
+
+
+.btn-normal {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.0357143em;
+    padding: 10px 15px 10px 15px;
+
+    color: #009688;
+    text-transform: uppercase;
+}
+.btn-normal-raised {
+    @extend .btn-normal;
+
+    color: white;
+    text-transform: uppercase;
+    background-color: $primary-light-color;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    font-weight: 500;
+}
+.btn-pressed {
+    @extend .btn-normal, .btn-normal-raised;
+    box-shadow: none;
+    background: linear-gradient(0deg, rgba(153, 153, 153, 0.2), rgba(153, 153, 153, 0.2));
+    border-radius: 2px;
+    color: $primary-light-color;
+}
+.btn-pressed-raised {
+    @extend .btn-normal-raised;
+    background-color: $pressed-bg-color;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.12), 0px 14px 14px rgba(0, 0, 0, 0.237602);
+}
+.btn-normal:disabled {
+    background-color: none;
+    box-shadow: none;
+    color: rgba(0, 0, 0, 0.38);
+}
+.btn-normal-raised:disabled {
+    background: linear-gradient(0deg, rgba(79, 79, 79, 0.26), rgba(79, 79, 79, 0.26));
+    border-radius: 2px;
+}
+.btn-normal-dark {
+    @extend .btn-normal;
+    color: $primary-dark-color;
+}
+.btn-normal-raised-dark {
+    @extend .btn-normal-raised;
+    background-color:  #92CBC5;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    color: rgba(0, 0, 0, 0.871943);
+}
+.btn-pressed-dark {
+    @extend .btn-pressed;
+    color: #80CBC4;
+}
+.btn-pressed-raised-dark {
+    @extend .btn-normal-raised;
+    background-color: #92CBC5;
+    color: rgba(0, 0, 0, 0.871943);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 8px 8px rgba(0, 0, 0, 0.24);
+}
+.btn-normal-dark:disabled {
+    @extend .btn-normal;
+    color: rgba(255, 255, 255, 0.3);
+}
+.btn-normal-raised-dark:disabled {
+    @extend .btn-normal-raised-dark;
+    background-color: #303030;
+    color: rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+}
