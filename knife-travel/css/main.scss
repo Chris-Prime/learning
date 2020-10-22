@@ -154,6 +154,7 @@ section {
     background-image: url('../images/hero-background.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     padding: 85px 0px 0px 0px !important;
 
     &__content {
@@ -280,5 +281,52 @@ section {
             font-weight: 300;
             color: #939FA4;
         }
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list {
+        margin-top: 80px;
+        width: 100%;
+    }
+}
+.offer-item {
+    height: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__image {
+        width: 170px;
+        height: 100px;
+        margin-right: 30px;
+        border-radius: 4px;
+    }
+    &__info {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+
+        &__title {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 21px;
+            color: #24282A;
+        }
+        &__text {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            color: #A7B0B4;
+        }
+    }
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
